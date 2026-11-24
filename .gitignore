@@ -1,0 +1,31 @@
+# Linux build artifacts
+gplobj/*.o
+bin/qm
+bin/libqmcli.so
+bin/qmclilib.so
+bin/qmconv
+bin/qmfix
+bin/qmidx
+bin/qmlnxd
+bin/qmtic
+stacks/*
+
+# Windows build artifacts
+win/obj/
+win/*.exe
+win/*.err
+win/*.lib
+
+# Deployment copies inside the QMSYS template.
+# The template keeps the master pcode file but the executables are produced by
+# the build scripts (compile-all.sh / link-all.sh / build-utilities.sh).
+qmsys/bin/*.exe
+qmsys/bin/*.dll
+
+# IDE / workspace files
+.idea/**
+.vscode/**
+PVS_Studio.fullhtml/**
+PVS_Studio.tasks
+gcc.log
+strace_out
